@@ -3,7 +3,7 @@ function DetectYshShebang()
         return
     endif
 
-    if getline(1) =~ '^#!\s\+/usr/bin/env\s\+ysh\>'
+    if getline(1) =~ '^#!\s*/usr/bin/env\s\+ysh\>'
         setfiletype ysh
     endif
 endfunction
